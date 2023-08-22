@@ -14,17 +14,17 @@ const Footer = () => {
     { icon: Facebook, name: 'Facebook', url: '#' },
   ]
   return (
-    <div className='bg-[#333333] md:p-[112px_116px_117px_115px]'>
-      <div className='flex items-center justify-evenly'>
-        <div>
-          <img src={whiteLogo} alt='' className='w-[131px] h-[20px]'/>
+    <div className='bg-[#333333] p-[67px_79px_84px_79px] md:p-[112px_116px_117px_115px]'>
+      <div className='lg:flex items-center justify-evenly text-center'>
+        <div className=''>
+          <img src={whiteLogo} alt='' className='w-[131px] h-[20px] m-auto' />
         </div>
         <div>
-          <p className='text-xs text-white font-light'>
+          <p className='pt-[40px] lg:pt-[0px] text-xs text-white font-light'>
             All rights reserved (C) {new Date().getFullYear()}
           </p>
         </div>
-        <div>
+        <div className='pt-[37px] lg:pt-[0px]'>
           <div className='flex items-center justify-center gap-0'>
             {socials.map(({ name, icon, url }) => (
               <Link to={url} key={name}>
@@ -34,7 +34,7 @@ const Footer = () => {
             ))}
           </div>
           <div>
-            <p className='text-xs text-white font-light'>@MySuiteMates</p>
+            <p className='text-xs text-white font-light pt-1'>@MySuiteMates</p>
           </div>
         </div>
       </div>
